@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/5bcbd78c1a.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <title>Log In and Registration Form</title>
+</head>
+<body>
+    <div class="small-container">
+        <div class="form sign up">
+            <h2>Sign Up</h2>
+
+            <div class="inputBox">
+                <input type="text" required="required">
+                <i class="fa-solid fa-user"></i>
+                <span>User Name</span>
+            </div>
+            <div class="inputBox">
+                <input type="email" required="required">
+                <i class="fa-solid fa-envelope"></i>
+                <span>E-mail Address</span>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required">
+                <i class="fa-solid fa-lock"></i>
+                <span>Create Password</span>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required">
+                <i class="fa-solid fa-lock"></i>
+                <span>Conform Password</span>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Create Account">
+                <p>Already a member ?<a href="#" class="login">Log In</a></p>
+            </div>
+        </div>
+        <div class="form sgn">
+            <h2>Sign In</h2>
+            <div class="inputBox">
+                <input type="text" required="required">
+                <i class="fa-solid fa-user"></i>
+                <span>User Name</span>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required">
+                <i class="fa-solid fa-lock"></i>
+                <span>Create Password</span>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="login">
+                <p>Not Registered ?<a href="#" class="create">Create an Account</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let login = document.querySelector('.login');
+        let create = document.querySelector('.login');
+        let small-container = document.querySelector('.small-container');
+
+
+        login.onclick = function(){
+            small-container.classList.add('signinForm');
+        }
+        create.onclick = function(){
+            small-container.classList.add('signinForm');
+        }
+    </script>
+</body>
+</html>
